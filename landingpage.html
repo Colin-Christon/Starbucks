@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./landing.css">
+    <title>Landing Page</title>
+</head>
+<body>
+    <section>
+        <div class="circle"></div>
+        <header>
+            <a href="#"  ><img src="./images/logo.png" class="logo"></a>
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Menu</a></li>
+                <li><a href="#">What's New</a></li>
+                <li><a href="#">Contact</a></li>
+            </ul>
+        </header>
+        <div class="content">
+            <div class="textbox">
+                <h2>It's not just Coffee<br> It's <span>Starbucks</span></h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+                    Repellat harum quasi consequatur quis doloribus nulla quidem blanditiis magni nostrum quam,
+                     consequuntur necessitatibus minus rerum corporis fugit tempore assumenda sint laborum.
+                    </p>
+
+                    <a href="#">Learn More</a>
+            </div>
+            <div class="imgBox">
+                <img src="./images/image1.png" class="starbucks">
+            </div>
+        </div>
+        <ul class="thumb">
+            <li><img src="./images/image1.png" onclick="imgSlider('image1.png')"></li>
+            <li><img src="./images/imag2pink.png" onclick="imgSlider('imag2pink.png')"></li>
+            <li><img src="./images/image3choco.png" onclick="imgSlider('image3choco.png')"></li>
+        </ul>
+        <ul class="sci">
+            <li><a href="https://www.facebook.com/Starbucks/"><img src="./images/facebook.png"></a></li>
+            <li><a href="https://www.instagram.com/starbucks/"><img src="./images/twitter.png"></a></li>
+            <li><a href="https://www.instagram.com/starbucks/"><img src="./images/instagram.png"></a></li>
+        </ul>
+     
+    </section>
+
+    <script type="text/javascript">
+        function imgSlider(anything){
+            document.querySelector(".starbucks").src= "/images/"+anything;
+            if(anything==="image3choco.png"){
+                document.querySelector(".starbucks").style.height="550px";
+            }
+        }
+    </script>
+</body>
+</html>
